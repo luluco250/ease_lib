@@ -1,6 +1,11 @@
 #ifndef EASE_LIBRARY_PRINTER_HEADER
 #define EASE_LIBRARY_PRINTER_HEADER
 
+#include <iostream>
+#include <vector>
+#include <cstdio>
+#include "../Types.hpp"
+
 namespace ease {
 	template<class Stream>
 	struct Printer {
@@ -22,7 +27,7 @@ namespace ease {
 			print(others...);
 		}
 
-		template<size_t InitSize = 1024, class... Args>
+		template<Size InitSize = 1024, class... Args>
 		void printf(const char* format, const Args&... args) {
 			std::vector<char> buffer(InitSize);
 
