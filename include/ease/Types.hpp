@@ -4,27 +4,20 @@
 #include <cstdint>
 
 namespace ease {
-	using SChar  = signed char;
-	using SShort = signed short;
-	using SInt   = signed int;
-	using SLong  = signed long;
-	using SLLong = signed long long;
-
-	using UChar  = unsigned char;
-	using UShort = unsigned short;
-	using UInt   = unsigned int;
-	using ULong  = unsigned long;
-	using ULLong = unsigned long long;
-
-	using Float   = float;
-	using Double  = double;
-	using LDouble = long double;
+	// Shorthands for native types
+	using llong   = long long;
+	using uchar   = unsigned char;
+	using ushort  = unsigned short;
+	using uint    = unsigned int;
+	using ulong   = unsigned long;
+	using ullong  = unsigned long long;
+	using ldouble = long double;
 
 	using I8  = int8_t;
 	using I16 = int16_t;
 	using I32 = int32_t;
 	using I64 = int64_t;
-
+	
 	using U8  = uint8_t;
 	using U16 = uint16_t;
 	using U32 = uint32_t;
@@ -35,7 +28,7 @@ namespace ease {
 	using Dword = U32;
 	using Qword = U64;
 
-	using Size = size_t;
+	using Size = std::size_t;
 }
 
 #endif
